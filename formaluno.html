@@ -34,8 +34,49 @@
     <input type="radio" id="noturno" name="turno" value="Noturno">
     <label for="noturno">Noturno</label><br>
     
+    <script>
+
+        function validar() {
+               let nome = document.getElementById("nome").value;
+               let sobrenome = document.getElementById("sobrenome").value;
+               let anoNascimento = document.getElementById("anonasc").value;
+               let graduacao = document.getElementById("graduacao").value;
+        
+               let anoAtual = new Date().getFullYear(); 
+    
+            let idade = anoAtual - anoNascimento;
     
     
+    
+               if (nome == "") {
+                alert("Insira seu nome");
+                return false;
+            }
+        
+            if (sobrenome == "") {
+                alert("Insira seu sobrenome");
+                return false;
+            }
+        
+            if (anoNascimento == "") {
+                alert("Insira seu ano de nascimento");
+                return false;
+            }
+    
+            if (idade < 15) {
+                alert("Você precisa ter pelo menos 15 anos para se cadastrar.");
+                return false;
+            }
+        
+            if (graduacao == "") {
+                alert("Insira sua graduação pretendida");
+                return false;
+            }
+        
+            return true;
+        
+        }
+        </script>   
     
     <button type="submit">Salvar</button>
 </form>
