@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[]], initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+</head>
+<body>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required><br>
+    
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" required><br>
+    
+    <label for="anoNascimento">Ano de Nascimento:</label>
+    <input type="date" id="anoNascimento" required><br>
+    
+    
+    <label for="graduacao">Graduação Pretendida:</label>
+    <select id="graduacao" required>
+        <option value="sistemas">Sistemas</option>
+        <option value="filosofia">Filosofia</option>
+        <option value="medicina">Medicina</option>
+        <option value="direito">Direito</option>
+    </select><br>
+    
+ 
+    <label>Turnos Disponíveis:</label>
+    <input type="radio" id="matutino" name="turno" value="Matutino">
+    <label for="matutino">Matutino</label>
+    <input type="radio" id="vespertino" name="turno" value="Vespertino">
+    <label for="vespertino">Vespertino</label>
+    <input type="radio" id="noturno" name="turno" value="Noturno">
+    <label for="noturno">Noturno</label><br>
+    
+    
+    
+    
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>
